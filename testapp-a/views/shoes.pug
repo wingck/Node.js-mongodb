@@ -1,0 +1,9 @@
+extends layout
+
+block main-content
+    .collections
+        each link in shoes
+            .shoesimage
+                img(src=link.path)
+                h2.shoesname #{link.name}
+                h2.shoesprice #{link.price}

@@ -1,0 +1,10 @@
+extends layout 
+
+block main-content
+  .icons
+    each link in menu
+        .items
+            a(href=link.link)
+                img(src=link.path)
+            p.description #{link.name}
+

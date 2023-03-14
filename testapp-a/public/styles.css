@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Poppins:wght@700&family=Roboto:wght@700&family=Secular+One&family=Sofia+Sans:ital,wght@1,200&family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+/* main page */
+h1 {
+    font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+li {
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 150px;
+}
+img {
+    width: 255px;
+    margin-top: 50px;
+}
+
+img:hover {
+    animation: changecolor 0.8s forwards;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header-content{
+    padding-left: 50px;
+}
+.header-content p{
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+header {
+border-bottom: 1px solid white;
+background:  black;
+overflow: hidden;
+}
+body {
+    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700405979.jpg");
+    background-position: center;
+    background-position-y: 170px;
+    background-repeat: repeat;
+}
+.description{
+    text-align: center;
+    font-size: 30px;
+    padding-right: 80px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(150, 105, 38);
+}
+h2 {
+    white-space: nowrap;
+}
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@keyframes changecolor{
+    0%{
+        box-shadow: 0 0 0 ;
+    }
+    100%{
+        box-shadow: 10px 2px 20px black;
+    }
+}
+
+/* items */
+.clothimage, .shoesimage {
+    margin: 0 auto;
+}
+
+.clothprice, .clothname, .shoesprice, .shoesname{
+    text-align: center;
+}
+.clothimage img, .shoesimage img{
+    border: 1px solid black;
+}
+
+/* responsive */
+@media screen and (max-width: 1230px) {
+    .icons{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 100px;
+    }
+    .description{
+        padding-right: 275px;
+    }
+    .collections{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 978px){
+    ul{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 875px){
+    .icons{
+        grid-template-columns: 1fr;
+    }
+    .items{
+        margin: 0 auto;
+        padding-right: 100px;
+    }
+    .description{
+        text-align: center;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 650px){
+    .header-content{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 612px){
+    .collections {
+        grid-template-columns: 1fr;
+    }
+}

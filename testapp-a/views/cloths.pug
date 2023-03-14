@@ -1,0 +1,10 @@
+extends layout 
+
+block main-content
+     .collections
+        each link in cloths
+            .clothimage
+                img(src=link.path)
+                h2.clothname #{link.name}
+                h2.clothprice #{link.price}
+        
